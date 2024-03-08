@@ -18,8 +18,11 @@ public class CustomListTest {
         list = new CustomList(null, new ArrayList<>());
         return list;
     }
+    private ArrayList<City> cities;
+    public void addCity(City city){
+        cities.add(city);
+    }
 
-    
     @Test
     public void addCityTest(){
         list = MockCityList();
